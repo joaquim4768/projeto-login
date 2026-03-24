@@ -15,23 +15,28 @@
 
         /*Semântico*/
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 100vw;
     height: 100vh;
     background-color: #5f2c82;
+
+    position: relative;
 }
 
 main{
     background-color: white;
+    position: absolute;
 
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
     width: 50vw;
     height: 65vh;
     border-radius: 15px;
     padding: 15px;
 }
+
+
 main h1{
     text-align: center;
 }
@@ -48,13 +53,15 @@ input{
     padding: 5px;
     border-radius: 5px;
     border: none;
-    width: 75%;
+    width: 90%;
     box-sizing: border-box;
 }
 form{
     padding-top: 20px;
 }
 div#email, div#senha{
+    display: flex;
+    align-items: center;
     padding: 5px;
     background-color:#5f2c82;
     border-radius:5px;
