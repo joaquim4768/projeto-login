@@ -31,9 +31,11 @@ main{
 
     transform: translate(-50%, -50%);
     width: 50vw;
-    height: 65vh;
+    min-height: 65vh;
     border-radius: 15px;
     padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 
@@ -46,6 +48,26 @@ main p{
 
 h1{
     padding: 10px;
+}
+div#imagem{
+    height: clamp(130px, 25vh, 250px);
+    overflow: hidden;
+    width: 100%;
+}
+div#imagem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+div#form{
+    height: 50%;
+    overflow-y: auto;
+}
+
+section{
+    width: 100%;
+    height: 100%;
 }
 
 input{
